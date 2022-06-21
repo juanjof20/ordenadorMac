@@ -1,0 +1,10 @@
+# platform :ios, '14.0' 
+
+target 'Cocoa-sideMenu' do 
+	us_frameworks!
+
+	pod 'SWRevealViewController', '~> 2.3'	
+
+
+end
+

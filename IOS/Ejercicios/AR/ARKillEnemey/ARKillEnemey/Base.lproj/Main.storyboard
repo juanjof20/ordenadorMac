@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController interfaceStyle="dark" id="BYZ-38-t0r" customClass="ViewController" customModule="ARKillEnemey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anY-ru-8pP">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seQ-kd-bkK">
+                                <rect key="frame" x="10" y="815" width="41" height="47"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playBTAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYQ-HL-IjA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wr8-HB-ixe">
+                                <rect key="frame" x="355" y="815" width="49" height="47"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBTAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qiT-2f-zYa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u33-Y4-JYb">
+                                <rect key="frame" x="174" y="44" width="91" height="58"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpZ-aB-o4t">
+                                <rect key="frame" x="352" y="72" width="52" height="32"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u33-Y4-JYb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="07g-tL-rvO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="anY-ru-8pP" secondAttribute="bottom" id="3Qp-Ev-jpf"/>
+                            <constraint firstItem="wr8-HB-ixe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LIL-bE-Arp"/>
+                            <constraint firstItem="anY-ru-8pP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="TkB-bi-mJ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rpZ-aB-o4t" secondAttribute="trailing" constant="10" id="Upv-0s-qJi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wr8-HB-ixe" secondAttribute="trailing" constant="10" id="Wrj-b1-EfH"/>
+                            <constraint firstItem="seQ-kd-bkK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="loU-fE-e38"/>
+                            <constraint firstItem="seQ-kd-bkK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="luF-qE-vRi"/>
+                            <constraint firstItem="anY-ru-8pP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nIw-lz-IOp"/>
+                            <constraint firstItem="wr8-HB-ixe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="seQ-kd-bkK" secondAttribute="trailing" constant="8" symbolic="YES" id="oiM-T5-vba"/>
+                            <constraint firstItem="u33-Y4-JYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oqr-lH-CDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="anY-ru-8pP" secondAttribute="trailing" id="pJ8-Xm-Zzm"/>
+                            <constraint firstItem="anY-ru-8pP" firstAttribute="top" secondItem="rpZ-aB-o4t" secondAttribute="bottom" id="zPF-Vt-AsE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playBT" destination="seQ-kd-bkK" id="KKC-ow-JYS"/>
+                        <outlet property="resetBT" destination="wr8-HB-ixe" id="9qU-Lp-Dtk"/>
+                        <outlet property="sceneView" destination="anY-ru-8pP" id="UyW-1a-KR7"/>
+                        <outlet property="scoreLB" destination="rpZ-aB-o4t" id="k4P-ua-NZn"/>
+                        <outlet property="tiempoLB" destination="u33-Y4-JYb" id="cZ4-zs-hOS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+  version="1.1" 
+  creator="gpx-poi.com">
+  <wpt lat="38.094280" lon="-3.631553">
+    <ele>400</ele>
+    <time>2022-01-26T18:19:52Z</time>
+    <name>Estech</name>
+    <desc>Vamos pa estech de rave</desc>
+  </wpt>
+</gpx>

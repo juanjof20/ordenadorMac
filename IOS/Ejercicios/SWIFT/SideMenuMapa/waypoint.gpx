@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+  version="1.1" 
+  creator="gpx-poi.com">
+  <wpt lat="38.098114" lon="-3.642518">
+    <time>2022-02-09T15:43:06Z</time>
+    <name>El Pósito</name>
+    <cmt>Museo de Rafael</cmt>
+    <desc>El Pósito, antiguo edificio del siglo XVIII totalmente rehabilitado, es actualmente un espacio turístico y expositivo en el que descubrir la esencia del municipio de Linares, situado en la provincia de Jaén.</desc>
+  </wpt>
+</gpx>
